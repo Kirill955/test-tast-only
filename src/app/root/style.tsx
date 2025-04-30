@@ -7,4 +7,9 @@ export const GlobalStyle = createGlobalStyle<{ $light?: boolean }>`
     background: ${({ $light, theme }) =>
       $light ? theme.light.colors.background : theme.dark.colors.background};
   }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 `;
